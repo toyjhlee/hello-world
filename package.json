@@ -1,0 +1,38 @@
+{
+  "name": "hello-world",
+  "version": "0.0.1",
+  "description": "Sample `rollup` template for bundling JS modules.",
+  "main": "dist/hello-world.cjs.js",
+  "module": "dist/hello-world.esm.js",
+  "browser": "dist/hello-world.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "lint": "eslint --fix --ignore-path .gitignore \"**/*.js\"",
+    "pretest": "npm run lint && npm run build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "rollup": "^2.41.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Dusan Vuckovic <dusan@dvuckovic.com> (https://dvuckovic.com)",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvuckovic/hello-world.git"
+  }
+}
