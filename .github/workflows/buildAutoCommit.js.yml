@@ -31,10 +31,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
-#     - name: commit changes
-#       uses: stefanzweifel/git-auto-commit-action@v4.1.6
-#       with:
-#         commit_message: add build
-#         branch: ${{ github.head_ref }}
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: commit changes
+      uses: stefanzweifel/git-auto-commit-action@v4.1.6
+      with:
+        commit_message: add build
+        branch: ${{ github.head_ref }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
