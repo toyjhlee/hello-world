@@ -5,30 +5,32 @@ module.exports = {
         jest: true,
     },
 
-    extends: [
-        'airbnb-base',
-        'plugin:chai-friendly/recommended',
-    ],
+    extends: [ 'airbnb-base', 'plugin:chai-friendly/recommended' ],
 
     parserOptions: {
         ecmaVersion: 12,
         sourceType: 'module',
     },
 
-    rules: {
+    ignorePatterns: [ 'dist/' ],
 
-        /*
-         * AirBnB JS rule overrides.
-         */
+    rules: {
+    /*
+     * AirBnB JS rule overrides.
+     */
 
         // Enforce consistent indentation.
-        'indent': [ 'error', 4, {
-            'SwitchCase': 1,
-            // Fix issue with `Cannot read property 'range' of null` errors. Please see
-            //   https://stackoverflow.com/questions/48391913/eslint-error-cannot-read-property-range-of-null
-            //   for more information.
-            'ignoredNodes': [ 'TemplateLiteral' ],
-        } ],
+        indent: [
+            'error',
+            4,
+            {
+                SwitchCase: 1,
+                // Fix issue with `Cannot read property 'range' of null` errors. Please see
+                //   https://stackoverflow.com/questions/48391913/eslint-error-cannot-read-property-range-of-null
+                //   for more information.
+                ignoredNodes: [ 'TemplateLiteral' ],
+            },
+        ],
 
         // Fix issue with `Cannot read property 'range' of null` errors. Please see
         //   https://stackoverflow.com/questions/48391913/eslint-error-cannot-read-property-range-of-null
@@ -42,7 +44,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
 
         // Enforce a maximum line length.
-        'max-len': [ 'error', { 'code': 120 } ],
+        'max-len': [ 'error', { code: 120 } ],
 
         // Don't try to resolve the dependencies.
         'import/no-unresolved': 'off',
@@ -82,11 +84,11 @@ module.exports = {
         'comma-dangle': [
             'error',
             {
-                'arrays': 'always-multiline',
-                'objects': 'always-multiline',
-                'imports': 'ignore',
-                'exports': 'ignore',
-                'functions': 'ignore',
+                arrays: 'always-multiline',
+                objects: 'always-multiline',
+                imports: 'ignore',
+                exports: 'ignore',
+                functions: 'ignore',
             },
         ],
 
