@@ -29,10 +29,10 @@
   "files": [
     "dist"
   ],
-  "author": "Dusan Vuckovic <dusan@dvuckovic.com> (https://dvuckovic.com)",
+  "author": "toyjhlee <toyjhlee@gmail.com>",
   "license": "WTFPL",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dvuckovic/hello-world.git"
+    "url": "git+https://github.com/toyjhlee/hello-world.git"
   }
 }
