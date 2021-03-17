@@ -1,6 +1,6 @@
 {
   "name": "@toyjhlee/hello-world",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sample `rollup` template for bundling JS modules.",
   "main": "dist/hello-world.cjs.js",
   "module": "dist/hello-world.esm.js",
